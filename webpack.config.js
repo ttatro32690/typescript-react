@@ -6,9 +6,13 @@ module.exports = {
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".ts", ".tsx"]
+        extensions: [".ts", ".tsx", ".js"]
     },
-
+    entry: './src/index.tsx',
+    devServer: {
+        compress: true,
+        port: 9000,
+    },
     module: {
         rules: [
             {
